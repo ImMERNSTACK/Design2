@@ -9,8 +9,9 @@ import ResearchBlog from './Research/Research/SubPages/ResearchBlog';
 import Loader from './Common/Loader';
 
 function App() {
-  const location = useLocation();  // React Router location hook
+  const location = useLocation();  
   const [isLoading, setIsLoading] = useState(false);
+  // my chnages
 
   // Set the loading state based on route change
   useEffect(() => {
