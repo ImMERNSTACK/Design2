@@ -29,7 +29,7 @@ function Newsletter() {
           alt="Newsletter"
           className="w-16 h-16 sm:w-32 sm:h-32 object-contain"
         />
-        <div className="text-white text-lg sm:text-2xl font-serif mt-4 sm:mt-10">
+        <div className="text-white text-lg sm:text-2xl chakra-petch-bold mt-4 sm:mt-10">
           <p>For Latest Updates</p>
           <p>Subscribe To Our Newsletter</p>
         </div>

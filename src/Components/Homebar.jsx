@@ -3,41 +3,36 @@ import Services from '../Home/Services';
 import Section2 from '../Home/Section2';
 import AchievementsSection from '../Home/AchivmentSection';
 import AppointmentForm from '../Home/AppointmentForm';
-import GaugeProgress from '../Home/GuageProgress';
+import Navbar from  '../Common/Navbar/Navbar'
 import FAQ from  '../Home/FAQ'
 import NewsLetter from '../Home/NewsLetter'
 import CaseStudy from '../Home/CaseStudy';
 import HeroSection from '../HeroPage/HeroSection'
 import Research from '../Home/Research';
- import Footer from '../Common/Footer';
+import Footer from "../Components2/Footer"
 import Progress from '../Progressbar/PregressBar';
+import Cards3 from '../Home/Cards3';
+import Packages from '../Home/Packages';
 //  import Card2 from '../Home/Card2'
 
 
 const Homebar = () => {
   return (<>
+    <Navbar/>
     <HeroSection/>
     <Services/>
     {/* <Card2/> */}
-    {/* <Section2/> */}
     <Progress/>
+    <Packages/>
+    <Cards3/>
     <AchievementsSection/>
+    <CaseStudy/>
     <AppointmentForm/>
-    {/* <GaugeProgress
-        progress={75}
-        title=" Vaccine Development"
-        description="Patholab Laboratory is equipped with best world class machinery & reagents."
-      />
-       <GaugeProgress
-        progress={88}
-        title=" Clinic Management"
-        description="Patholab Laboratory is equipped with best world class machinery & reagents."
-      /> */}
-      <FAQ/>
-      <CaseStudy/>
-      <NewsLetter/>
-      <Research/>
-      <Footer/>
+    <Section2/>    
+    <FAQ/>
+    <Research/>
+    
+    <Footer/>
    
     </>
   );

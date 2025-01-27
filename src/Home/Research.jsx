@@ -47,13 +47,14 @@ const Research = () => {
   ];
 
   return (
-    <div className="my-[150px] p-4">
+    <div className="xl:container mx-auto">
+    <div className="my-10 p-4">
       <div className="text-center">
         <h1 className="text-[#39D5C5] text-xl font-semibold mb-4">
           What good works we are doing
         </h1>
 
-        <h2 className="text-5xl font-semibold mb-4">Our Latest Research</h2>
+        <h2 className="text-5xl font-semibold mb-4 chakra-petch-bold text-[#1D2864]">Our Latest Research</h2>
 
         <p className="text-neutral-500">
           We have world-class pathologists & Lab assistants. We are equipped
@@ -118,7 +119,7 @@ const Research = () => {
                   Scientific
                 </button>
               </div>
-              <h1 className="text-[18px] hover:text-color-sky font-semibold h-16 my-3">{item.heading}</h1>
+              <h1 className="text-[18px] text-[#1D2864] chakra-petch-bold transition-text duration-500 hover:text-color-sky font-semibold h-16 my-3">{item.heading}</h1>
 
               <div className="flex w-full items-center gap-2 text-sm font-[600] text-[#2AD1C2] cursor-pointer group">
                 <h2>READ MORE</h2>
@@ -128,6 +129,7 @@ const Research = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+    </div>
     </div>
   );
 };

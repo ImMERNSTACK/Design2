@@ -9,14 +9,14 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-full flex flex-row justify-between items-center px-4">
-      <nav className="flex items-center justify-between w-96 lg:w-full">
+    <div className="w-full hidden lg:flex flex-row justify-between items-center px-4">
+      <nav className="flex items-center justify-between w-96 lg:w-full xl:container xl:mx-auto">
         {/* Logo */}
         <div className="flex items-center m-6">
           <img
             src="https://demo.bravisthemes.com/patholab/wp-content/uploads/2023/08/logo.png"
             alt="Patholab Laboratory Logo"
-            className="w-48"
+            className="w-32"
           />
         </div>
 
@@ -27,13 +27,13 @@ const Navbar = () => {
               <div className="p-2 bg-white mr-2 rounded-full text-black">
                 <FontAwesomeIcon icon={item.icon} />
               </div>
-              <div className="w-full p-4 border-r-2">
+              <div className="w-full px-4 border-r-2">
                 <h3 className="font-bold text-sm text-blue-900">{item.contact}</h3>
                 <p className="text-gray-400 text-xs mt-2">{item.info}</p>
               </div>
             </div>
           ))}
-          <div className="m-6">
+          <div className="m-4">
             <button className="py-2 px-4 flex items-center text-white font-semibold rounded-full bg-teal-500 transition-colors duration-300">
               Request Home Collection
             </button>

@@ -14,13 +14,14 @@ const CaseStudy = () => {
   return (
     <>
       <ScrollHeader />
-      <div className="mx-auto flex flex-col mb-5">
+      <div className="xl:container mx-auto">
+      <div className="mx-auto flex flex-col mb-5 p-8">
         <div className="flex flex-col items-center m-6 justify-center">
           <h3 className="text-color-sky text-pretty font-semibold">
             Promising Best Quality Services
           </h3>
-          <h1 className="text-blue-900 text-3xl p-4 text-pretty">
-            Our amazing Healthcare Packages
+          <h1 className="text-blue-900 text-3xl p-4 text-pretty chakra-petch-bold">
+            Case Studies By Patholab
           </h1>
           <p>
             As an investment firm, our main goal is to provide the best services
@@ -49,6 +50,8 @@ const CaseStudy = () => {
                 slidesPerView: 3, // 3 slides for larger screens
                 spaceBetween: 30,
               },
+              
+              
             }}
             className="mySwiper"
           >
@@ -78,6 +81,7 @@ const CaseStudy = () => {
             ))}
           </Swiper>
         </div>
+      </div>
       </div>
     </>
   );

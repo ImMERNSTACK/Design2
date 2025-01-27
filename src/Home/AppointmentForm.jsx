@@ -2,6 +2,7 @@ import React from "react";
 
 const AppointmentForm = () => {
   return (
+    <div className="xl:container mx-auto">
     <div
       className="relative bg-gradient-to-r from-teal-500 to-cyan-500 text-white flex flex-wrap lg:flex-nowrap items-center p-2 py-10 px-6"
       style={{
@@ -13,10 +14,10 @@ const AppointmentForm = () => {
       }}
     >
       {/* Overlay Green Background */}
-      <div className="absolute inset-0 bg-green-500 opacity-50"></div>
+      <div className="absolute inset-0 bg-[#37CDC6] opacity-80"></div>
 
       <div className="lg:w-1/2 w-full p-6 text-center lg:text-left mb-8 lg:mb-0 relative z-10">
-        <h1 className="text-4xl font-bold mb-4 animate-fade-in-up">
+        <h1 className="text-5xl font-bold mb-4 animate-fade-in-up chakra-petch-bold">
           Patholab is committed
           <br />
           <span className="text-5xl text-Didot">For accurate Findings</span>
@@ -50,7 +51,7 @@ const AppointmentForm = () => {
         <h2 className="animate-fade-in-up font-bold mb-4 text-center text-color-blue opacity-70 text-sm">
           High Performance Services For
         </h2>
-        <h1 className="animate-fade-in-up font-bold mb-4 text-2xl text-color-blue text-font text-center font-serif">
+        <h1 className="animate-fade-in-up font-bold mb-4 text-2xl text-[#1D2864] text-font text-center chakra-petch-bold">
           Schedule An Appointment
         </h1>
         <p className="text-center animate-fade-in-up text-gray-500 mb-6">
@@ -59,9 +60,9 @@ const AppointmentForm = () => {
         </p>
         <form className="space-y-4">
           <div>
-            <label className="block font-medium">Select Service*</label>
+            
             <select
-              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="w-full px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500"
               required
             >
               <option value="">Select Service</option>
@@ -73,13 +74,13 @@ const AppointmentForm = () => {
             <input
               type="text"
               placeholder="Full Name*"
-              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="w-full px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500"
               required
             />
             <input
               type="email"
               placeholder="Email Address*"
-              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="w-full px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500"
               required
             />
           </div>
@@ -87,25 +88,25 @@ const AppointmentForm = () => {
             <input
               type="text"
               placeholder="Phone No*"
-              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="w-full px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500"
               required
             />
             <input
               type="text"
               placeholder="Location*"
-              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="w-full px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500"
               required
             />
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <input
               type="date"
-              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="w-full px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500"
               required
             />
             <input
               type="time"
-              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500"
+              className="w-full px-4 py-2 border rounded-full focus:outline-none focus:ring-2 focus:ring-teal-500"
               required
             />
           </div>
@@ -120,18 +121,19 @@ const AppointmentForm = () => {
               className="mr-2"
               required
             />
-            <label htmlFor="terms" className="text-sm">
+            <label htmlFor="terms" className="text-sm chakra-petch-bold text-blue-900">
               I agree to the Terms of Use and Privacy Policy
             </label>
           </div>
           <button
             type="submit"
-            className="w-full bg-gradient-to-r from-emerald-500 via-Emerald-200 to-green-400 text-white font-medium px-4 py-2 rounded-md hover:bg-teal-700 transition duration-300"
+            className="w-full bg-[#086D78] text-white font-medium px-4 py-2 rounded-full hover:bg-teal-700 transition duration-300"
           >
             Make Appointment
           </button>
         </form>
       </div>
+    </div>
     </div>
   );
 };

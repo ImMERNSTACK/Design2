@@ -13,12 +13,13 @@ const Services = () => {
     return (
         <>
             <ScrollHeader />
+            <div className="xl:container mx-auto">
             <div className="items-center w-full bg-[#F6FAFF] flex flex-col">
                 <div className="mt-10 flex flex-col gap-2 w-full items-center justify-center text-center">
                     <h4 className="text-teal-500 font-bold text-md">
                         Versatile Laboratory Service Provider
                     </h4>
-                    <h1 className="font-serif text-3xl font-bold">
+                    <h1 className="chakra-petch-bold text-4xl font-bold text-[#1D2864] ">
                         Our amazing Services
                     </h1>
                     <p className="text-md text-gray-500">
@@ -27,7 +28,7 @@ const Services = () => {
                 </div>
 
                 {/* Swiper Component with Breakpoints */}
-                <div className="flex flex-row w-full">
+                <div className="flex flex-row w-full p-8">
                     <Swiper
                         slidesPerView={4}
                         spaceBetween={30}
@@ -61,7 +62,7 @@ const Services = () => {
                                         <div className="mb-4">
                                             <FontAwesomeIcon icon={item.icon} size="3x" />
                                         </div>
-                                        <h2 className="text-xl font-bold mb-4 h-12 text-[#1D2864]">{item.h}</h2>
+                                        <h2 className="text-xl font-bold mb-4 h-12 chakra-petch-bold text-[#1D2864]">{item.h}</h2>
                                         <p className="mb-4 h-16 text-[#6F7F90] text-md">{item.p}</p>
                                         <a href="#" className="font-bold text-sm">
                                             READ MORE <FontAwesomeIcon icon={faArrowRight} />
@@ -71,7 +72,7 @@ const Services = () => {
                                         <div className="mb-4">
                                             <FontAwesomeIcon icon={item.icon} size="3x" />
                                         </div>
-                                        <h2 className="text-xl font-bold mb-4 transform-none h-12">{item.h}</h2>
+                                        <h2 className="text-xl font-bold mb-4 transform-none h-12 chakra-petch-bold">{item.h}</h2>
                                         <p className="mb-4 h-16 text-sm">{item.p}</p>
                                         <a href="#" className="font-bold text-sm">
                                             READ MORE <FontAwesomeIcon icon={faArrowRight} />
@@ -82,6 +83,7 @@ const Services = () => {
                         ))}
                     </Swiper>
                 </div>
+            </div>
             </div>
         </>
     );

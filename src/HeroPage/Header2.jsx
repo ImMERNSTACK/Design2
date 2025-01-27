@@ -32,7 +32,7 @@ const Header2 = () => {
   }, [lastScrollY]);
 
   return (
-    <header style={{zIndex:1000}}
+    <header style={{zIndex:100}}
       className={`fixed top-0 left-0  w-full transition-transform duration-300 ease-in-out ${
         showHeader ? "transform translate-y-0" : "transform -translate-y-full z-50"
       } text-white `}

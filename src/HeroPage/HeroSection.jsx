@@ -39,7 +39,7 @@ const HeroSection = () => {
     <>
       <div className="relative">
         {/* Header component */}
-        <div className="absolute top-0 left-0  lg:mx-auto z-50 w-full  lg:px-4">
+        <div className="absolute top-0 left-0  lg:mx-auto z-50 w-full lg:px-4">
           <Header show="" />
         </div>
         
@@ -71,8 +71,8 @@ const HeroSection = () => {
                   transition={{ duration: 1.5, ease: "easeOut" }}
                 >
                   <div className="text-center text-white space-y-6">
-                    <h1 className="text-4xl md:text-6xl transition-transform duration-700 font-bold">{slides[0].title}</h1>
-                    <h2 className="text-2xl md:text-4xl transition-transform duration-500 font-semibold">{slides[0].subtitle}</h2>
+                    <h1 className="text-4xl md:text-6xl transition-transform duration-700 font-bold chakra-petch-bold">{slides[0].title}</h1>
+                    <h2 className="text-2xl md:text-4xl transition-transform duration-500 font-semibold ">{slides[0].subtitle}</h2>
                     <p className="text-lg transition-transform duration-300 md:text-xl">{slides[0].description}</p>
                     <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-all duration-300">
                       Learn More
@@ -115,10 +115,10 @@ const HeroSection = () => {
                   animate={{ y: 0, opacity: 1 }}
                 >
                   <div className="text-left text-white space-y-6">
-                    <h1 className="text-4xl text-blue-950 md:text-6xl font-bold">{slides[1].title}</h1>
-                    <h2 className="text-2xl md:text-4xl text-blue-950 font-semibold">{slides[1].subtitle}</h2>
+                    <h1 className="text-4xl text-blue-950 md:text-6xl font-bold chakra-petch-bold drop-shadow-3xl  ">{slides[1].title}</h1>
+                    <h2 className="text-2xl md:text-4xl text-blue-950 font-semibold chakra-petch-bold">{slides[1].subtitle}</h2>
                     <p className="text-lg text-gray-400 md:text-xl">{slides[1].description}</p>
-                    <div className="flex flex-col lg:flex-row space-y-6 lg:space-x-6">
+                    <div className="flex flex-col md:flex-row lg:flex-row space-y-6 sm:space-x-6  md:space-x-6 lg:space-x-6 lg:space-y-0 md:space-y-0">
                       <button className="bg-color-sky text-white px-6 py-3 rounded-full hover:bg-blue-900 transition-all duration-300">
                         Get Patholab Services
                       </button>
